@@ -1,13 +1,15 @@
 import IngredientsCover from "../assets/ingredients.png";
+import CoverImage from "../components/CoverImage";
+import Navigation from "../components/Navigation";
 
 export default function Ingredients() {
   return (
-    <div className="w-screen h-screen">
-      <img
-        src={IngredientsCover}
-        alt="Ingredients"
-        className="w-full h-full object-cover absolute z-[-1] opacity-90"
-      />
+    <div>
+      <CoverImage src={IngredientsCover} alt="Ingredients" />
+      
+      <div className="relative">
+        <Navigation />
+      </div>
     </div>
   );
 }
